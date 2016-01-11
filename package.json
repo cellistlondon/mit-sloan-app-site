@@ -1,0 +1,25 @@
+{
+  "name": "cellist-co-site",
+  "version": "0.0.1",
+  "description": "cellist.co website in jekyll/gulp/bootstrap",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cellistlondon/cellist-co-site.git"
+  },
+  "author": "cellist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cellistlondon/cellist-co-site/issues"
+  },
+  "homepage": "https://github.com/cellistlondon/cellist-co-site#readme"
+}
