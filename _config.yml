@@ -10,7 +10,6 @@ url: "http://cellist.co" # the base hostname & protocol for your site
 twitter_username: cellist_co
 github_username:  cellistlondon
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock"]
-
 # Build settings
 markdown: kramdown
+exclude: ["node_modules", "less", "gulpfile.js", "package.json", "Gemfile", "Gemfile.lock"]

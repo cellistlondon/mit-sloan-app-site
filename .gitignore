@@ -1,2 +1,6 @@
 _site
 .sass-cache
+css
+fonts
+js
+node_modules
