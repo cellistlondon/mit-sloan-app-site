@@ -3,8 +3,13 @@ layout: default
 ---
 
 <div class="home">
-
-  <div id="carousel-hero" class="carousel slide carousel-black-controls" data-ride="carousel" data-interval="false">
+  <div class="jumbotron">
+    <div class="container">
+      <h1><small>Welcome to </small>cellist consulting</h1>
+      <p>Solutions for the investment management industry</p>
+    </div>
+  </div>
+  <div id="carousel-hero" class="carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
       <li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-hero" data-slide-to="1"></li>
@@ -14,32 +19,36 @@ layout: default
     <div class="carousel-inner" role="listbox">
       <div class="item active">
         <div class="jumbotron">
-          <div class="container">
-            <h1>Hello, world!</h1>
+          <div class="jumbotron-bg" style="background-image: url('{{ " /img/process.jpg " | prepend: site.baseurl }}');">
+            <div class="container pull-right text-right">
+              <h1>Transform your investment process</h1>
+              <p>From detailed portfolio selection through to high level asset allocation, we can help you refine your investment process</p>
+              <p>Incoporate tools such as screening, optimisation, risk budgeting, factor-based strategies or simply let us help you properly document what you already do</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-caption">
-          one
         </div>
       </div>
       <div class="item">
         <div class="jumbotron">
-          <div class="container">
-            <h1>TWO!</h1>
+          <div class="jumbotron-bg" style="background-image: url('{{ " /img/minute.jpg " | prepend: site.baseurl }}');">
+            <div class="container">
+              <h1>Up to the minute information</h1>
+              <p>Let us help you integrate your systems and help you make better informed investment decisions</p>
+              <p>Live portfolio risk, performance and positions, all in one place</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-caption">
-          two
-        </div>
+
       </div>
       <div class="item">
         <div class="jumbotron">
-          <div class="container">
-            <h1>THREE!</h1>
+          <div class="jumbotron-bg" style="background-image: url('{{ " /img/tools.jpg " | prepend: site.baseurl }}');">
+            <div class="container">
+              <h1>Build investment tools quickly</h1>
+              <p>Expertise in both technology and investing allow us to build dependable tools quickly</p>
+              <p>We can work with your in-house developers to take our rapid prototypes as a template and elevate them into something they can enhance and maintain inside their own process framework</p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-caption">
-          three
         </div>
       </div>
     </div>
@@ -53,5 +62,15 @@ layout: default
       <span class="sr-only">Next</span>
     </a>
   </div>
-
+  <div class="bg-info">
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Cellist's expertise can be deployed across the investment industry</h1>
+        <h2>To see our Wealth Management solutions click here</h2>
+        <a href="#" class="btn btn-lg btn-primary">Wealth Management</a>
+        <h2>To see our Asset Management solutions click here</h2>
+        <a href="#" class="btn btn-lg btn-primary">Asset Management</a>
+      </div>
+    </div>
+  </div>
 </div>

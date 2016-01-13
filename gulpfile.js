@@ -26,13 +26,14 @@ var paths = {
     fa_fonts: [fa_path + '/fonts/*'],
     bootstrap_minjs: [bootstrap_path + '/dist/js/*.min.js'],
     jquery_minjs: [jquery_path + '/jquery.min.js'],
+    app_less: ['./_less/*'],
     dist_css: './css',
     dist_fonts: './fonts',
     dist_js: './js'
 };
 
 gulp.task('css', function() {
-    return gulp.src(paths.bootstrap_mincss.concat(paths.fa_mincss))
+    return gulp.src(paths.bootstrap_mincss.concat(paths.fa_mincss).concat(paths.app_less))
         .pipe(concat('cellist.css'))
         .pipe(gulp.dest(paths.dist_css));
 });
@@ -84,7 +85,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
  */
 gulp.task('watch', function () {
     //gulp.watch(['_scss/*.scss', '_scss/components/*.scss', '_scss/pages/*.scss'], ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', 'img/*', 'js/*.js'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', 'img/*', 'js/*.js','_less/*.css'], ['jekyll-rebuild']);
 });
 gulp.task('build', ['jekyll-build']);
 gulp.task('default',['browser-sync','watch']);
