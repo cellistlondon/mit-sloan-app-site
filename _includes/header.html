@@ -2,25 +2,30 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <!--<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>-->
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <svg><path xmlns="http://www.w3.org/2000/svg" d="M66.1,53c-1.2,0-2.1,1-2.1,2.1c0,7-5.1,12.8-11.8,13.8V41c5.9-1,10.4-6.2,10.4-12.3c0-6.9-5.6-12.5-12.5-12.5  c-1.2,0-2.1,1-2.1,2.1V37c-9.1,1.1-16.1,8.8-16.1,18.1s7.1,17.1,16.1,18.1v8.5c0,1.2,1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1v-8.5  c9.1-1.1,16.1-8.8,16.1-18.1C68.2,54,67.3,53,66.1,53z M52.1,20.7c3.5,0.9,6.1,4.2,6.1,8s-2.6,7-6.1,8V20.7z M47.9,69  c-6.7-1-11.8-6.8-11.8-13.8s5.1-12.8,11.8-13.8V69z"/></svg>
+            <span>cellist.co</span>
+            <!--<img alt="Brand" src="...">-->
+          </a>
+        </div>
       </div>
     </nav>
+
+    <!--<nav class="site-nav">-->
+
+    <!--  <div class="trigger">-->
+    <!--    {% for page in site.pages %}-->
+    <!--      {% if page.title %}-->
+    <!--      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
+    <!--      {% endif %}-->
+    <!--    {% endfor %}-->
+    <!--  </div>-->
+    <!--</nav>-->
 
   </div>
 

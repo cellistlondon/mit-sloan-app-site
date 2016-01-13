@@ -6,6 +6,9 @@ var browserSync = require('browser-sync');
 var cp = require('child_process');
 
 var bootstrap_path = path.join(__dirname, 'node_modules', 'bootstrap');
+var fa_path = path.join(__dirname, 'node_modules', 'font-awesome');
+var jquery_path = path.join(__dirname, 'node_modules', 'jquery');
+
 
 console.log('cellist-co-site: building bootstrap from: ' + bootstrap_path);
 
@@ -18,27 +21,30 @@ var gulp_grunt = require('gulp-grunt')(gulp, {
 
 var paths = {
     bootstrap_mincss: [bootstrap_path + '/dist/css/*.min.css'],
+    fa_mincss: [fa_path + '/css/*.min.css'],
     bootstrap_fonts: [bootstrap_path + '/dist/fonts/*'],
+    fa_fonts: [fa_path + '/fonts/*'],
     bootstrap_minjs: [bootstrap_path + '/dist/js/*.min.js'],
+    jquery_minjs: [jquery_path + '/jquery.min.js'],
     dist_css: './css',
     dist_fonts: './fonts',
     dist_js: './js'
 };
 
 gulp.task('css', function() {
-    return gulp.src(paths.bootstrap_mincss)
-        .pipe(concatCss('cellist.css'))
+    return gulp.src(paths.bootstrap_mincss.concat(paths.fa_mincss))
+        .pipe(concat('cellist.css'))
         .pipe(gulp.dest(paths.dist_css));
 });
 
 gulp.task('js', function() {
-    return gulp.src(paths.bootstrap_minjs)
+    return gulp.src(paths.jquery_minjs.concat(paths.bootstrap_minjs))
         .pipe(concat('cellist.js'))
         .pipe(gulp.dest(paths.dist_js));
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(paths.bootstrap_fonts)
+    return gulp.src(paths.bootstrap_fonts.concat(paths.fa_fonts))
         .pipe(gulp.dest(paths.dist_fonts));
 });
 gulp.task('assets', ['css', 'js', 'fonts']);
@@ -65,7 +71,23 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
     });
 });
 
-gulp.task('default',['browser-sync']);
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+    browserSync.reload();
+});
+
+/**
+ * Watch scss files for changes & recompile
+ * Watch html/md files, run jekyll & reload BrowserSync
+ */
+gulp.task('watch', function () {
+    //gulp.watch(['_scss/*.scss', '_scss/components/*.scss', '_scss/pages/*.scss'], ['sass']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', 'img/*', 'js/*.js'], ['jekyll-rebuild']);
+});
+gulp.task('build', ['jekyll-build']);
+gulp.task('default',['browser-sync','watch']);
 
 //not required unless bootstrap source modified (not recommended)
 //install dependent npm packages inside bootstrap directory before running:

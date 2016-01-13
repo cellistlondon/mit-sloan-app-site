@@ -4,20 +4,54 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div id="carousel-hero" class="carousel slide carousel-black-controls" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-hero" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-hero" data-slide-to="1"></li>
+      <li data-target="#carousel-hero" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="jumbotron">
+          <div class="container">
+            <h1>Hello, world!</h1>
+          </div>
+        </div>
+        <div class="carousel-caption">
+          one
+        </div>
+      </div>
+      <div class="item">
+        <div class="jumbotron">
+          <div class="container">
+            <h1>TWO!</h1>
+          </div>
+        </div>
+        <div class="carousel-caption">
+          two
+        </div>
+      </div>
+      <div class="item">
+        <div class="jumbotron">
+          <div class="container">
+            <h1>THREE!</h1>
+          </div>
+        </div>
+        <div class="carousel-caption">
+          three
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-hero" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-hero" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
 </div>
