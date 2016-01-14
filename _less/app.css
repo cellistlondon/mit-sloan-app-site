@@ -1,5 +1,6 @@
 body {
-    padding-top: 80px;
+    top: 80px;
+
 }
 
 /*.navbar-brand{*/
@@ -66,4 +67,9 @@ body {
 
   .affix {
       top: 80px;
+  }
+  
+  .nav-link {
+      padding-top: 60px; 
+      margin-top: -40px;
   }
