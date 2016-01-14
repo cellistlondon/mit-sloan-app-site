@@ -39,8 +39,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src(paths.jquery_minjs.concat(paths.bootstrap_minjs))
-        .pipe(concat('cellist.js'))
+    return gulp.src(paths.jquery_minjs, paths.bootstrap_minjs)
         .pipe(gulp.dest(paths.dist_js));
 });
 
