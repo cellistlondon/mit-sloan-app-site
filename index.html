@@ -3,20 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  <ul class="nav nav-pills nav-stacked">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>
+  <nav id="navbar-mitapp" role="navigation">
+    <ul class="nav nav-pill affix">
+      <li role="presentation" class="active"><a href="#qanda">Questions and Answers</a></li>
+      <li role="presentation"><a href="#questionOne">Why an MBA?</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </nav>
   <div class="jumbotron">
     <!--<div class="jumbotron-bg" style="background-image: url('{{ " /img/process.jpg " | prepend: site.baseurl }}');">-->
     <div class="container">
       <div class="img-with-overlay">
         <img src="{{ " /img/chris-sloan-campus.jpg " | prepend: site.baseurl }}" class="img-responsive" />
         <div class="img-overlay text-white">
-          <h2><small>Additional insights about</small> Christopher Ellis Thomas</h2>
+          <h2>Additional insights about Christopher Ellis Thomas</h2>
           <h1>Application to the MIT Sloan School of Management</h1>
-
         </div>
       </div>
     </div>
@@ -25,10 +26,10 @@ layout: default
 
 
   <div id="qanda" class="container">
-  <h1>Questions and Answers</h1>
+    <h1>Questions and Answers</h1>
     <div class="panel-group" id="qandaAccordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-primary">
-        <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerOne" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerOne"role="tab" id="questionOne">
+        <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerOne" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerOne" role="tab" id="questionOne">
           <h4 class="panel-title">
         <a href="#answerOne" role="button">
           Why an MBA?
@@ -60,10 +61,9 @@ layout: default
         </div>
       </div>
       <div class="panel panel-primary">
-        <div class="panel-heading" role="tab" id="questionTwo">
+        <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerTwo" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerTwo" role="tab" id="questionTwo">
           <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#qandaAccordion" href="#answerTwo" aria-expanded="true" aria-controls="answerTwo">
-              Why MIT Sloan?
+        <a href="#answerTwo" role="button">Why MIT Sloan?
               </a>
               </h4>
         </div>
@@ -92,20 +92,26 @@ layout: default
         </div>
       </div>
       <div class="panel panel-primary">
-        <div class="panel-heading" role="tab" id="questionThree">
+        <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerThree" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerThree" role="tab" id="questionThree">
           <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#qandaAccordion" href="#answerThree" aria-expanded="true" aria-controls="answerThree">
-         Why now? </a>
+        <a href="#answerThree" role="button">Why now? </a>
       </h4>
         </div>
         <div id="answerThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="questionThree">
           <div class="panel-body">
-            <p>There are two aspects to this answer, why didn’t I apply for an MBA earlier in my career and, given that I didn’t why don’t I now apply for an EMBA or Sloan Fellows program? On the former, the ‘prime’ period of my career for application coincided
-              with the credit crunch great recession financial crisis of 2008 at which point I had 4 years of experience. While I managed to stay employed throughout that period and indeed continued to develop my career there were no opportunities to
-              take on a full-time MBA. In addition I completed the CFA program over a similar period I realise that I am right on the cusp between the experience of a typical full time MBA candidate and an EMBA or Sloan Fellow. I thought long and hard
-              about it and my decision came down to the following: I certainly wanted to fully immerse myself in a program and so I ruled out part-time study While the Sloan Fellow program is appealing I felt that the level of accomplishment required
-              to be a viable candidate would necessitate being one or two steps further in my career
+            <p>There are two aspects to this answer, why didn’t I apply for an MBA earlier in my career and, given that I didn’t why don’t I now apply for an EMBA or Sloan Fellows program?
             </p>
+            <p>On the former, the ‘prime’ period of my career for application coincided with the credit crunch great recession financial crisis of 2008 at which point I had 4 years of experience. While I managed to stay employed throughout that period and
+              indeed continued to develop my career there were no opportunities to take on a full-time MBA. In addition I completed the CFA program over a similar period.
+            </p>
+            <p>I realise that I am on the cusp between the experience of a typical full time MBA candidate and an EMBA or Sloan Fellow. I thought long and hard about this and my decision came down to the following:
+            </p>
+            <ul>
+              <li>I certainly wanted to fully immerse myself in a program and so I ruled out part-time study
+              </li>
+              <li>While the Sloan Fellow program is appealing I felt that the level of accomplishment required to be a viable candidate would necessitate being one or two steps further in my career
+              </li>
+            </ul>
           </div>
         </div>
       </div>
