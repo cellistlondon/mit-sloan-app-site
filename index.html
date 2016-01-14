@@ -3,21 +3,24 @@ layout: default
 ---
 
 <div class="home">
-  <nav id="navbar-mitapp" role="navigation">
-    <ul class="nav nav-pill affix">
-      <li role="presentation" class="active"><a href="#qanda">Questions and Answers</a></li>
-      <li role="presentation"><a href="#questionOne">Why an MBA?</a></li>
-      <li role="presentation"><a href="#">Messages</a></li>
-    </ul>
-  </nav>
+  <!--<nav id="navbar-mitapp" role="navigation">-->
+  <!--  <ul class="nav nav-pill affix">-->
+  <!--    <li role="navigation" class="active"><a href="#qanda">Questions and Answers</a></li>-->
+  <!--    <li role="navigation"><a href="#questionOne">Why an MBA?</a></li>-->
+  <!--    <li role="navigation"><a href="#questionTwo">Why MIT Sloan?</a></li>-->
+  <!--    <li role="navigation"><a href="#questionThree">Why now?</a></li>-->
+  <!--  </ul>-->
+  <!--</nav>-->
   <div class="jumbotron">
     <!--<div class="jumbotron-bg" style="background-image: url('{{ " /img/process.jpg " | prepend: site.baseurl }}');">-->
     <div class="container">
       <div class="img-with-overlay">
         <img src="{{ " /img/chris-sloan-campus.jpg " | prepend: site.baseurl }}" class="img-responsive" />
         <div class="img-overlay text-white">
-          <h2>Additional insights about Christopher Ellis Thomas</h2>
+          <div class="container">
           <h1>Application to the MIT Sloan School of Management</h1>
+          <h2>Additional insights about Christopher Ellis Thomas</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -26,7 +29,7 @@ layout: default
 
 
   <div id="qanda" class="container">
-    <h1>Questions and Answers</h1>
+    <h1 class="text-primary">Questions and Answers</h1>
     <div class="panel-group" id="qandaAccordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-primary">
         <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerOne" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerOne" role="tab" id="questionOne">
@@ -117,4 +120,17 @@ layout: default
       </div>
     </div>
   </div>
+  <div id="aboutMe" class="container">
+    <h1 class="text-primary">About me</h1>
+    <ul class="list-group">
+  <li class="list-group-item list-group-item-info">I grew up in a working class family in suburban <a href="https://goo.gl/maps/ewafzxojzz62" target="_blank">South East London</a> alongside two younger brothers.</li>
+  <li class="list-group-item list-group-item-info">I was the first from his extended family and one of only a handful from his <a href="http://www.bromley.gov.uk/directory_record/59837/kemnal_technology_college" target="_blank">secondary school</a> class to attend university.</li>
+  <li class="list-group-item list-group-item-info">I studied Mechanical Engineering and was awarded an upper second class degree by the <a href="http://www.birmingham.ac.uk/index.aspx" target="_blank">University of Birmingham</a> a <a href="https://en.wikipedia.org/wiki/Red_brick_university" target="_blank">redbrick institution</a> and founder member of the prestigious <a href="https://en.wikipedia.org/wiki/Russell_Group" target="_blank">Russell Group</a> .</li>
+  <li class="list-group-item list-group-item-info">I entered financial services immediately following graduation and has held a diverse set of positions across Asset and Wealth management including promotions across both analytical and sales roles.</li>
+  <li class="list-group-item list-group-item-info">In 2015 I set up his my company to offer solutions to investment managers, <a href="http://cellist.co" target="_blank">Cellist Consulting</a>.</li>
+<li class="list-group-item list-group-item-info">I holds a CFA charter having passed all three exams at the first attempt.</li>
+<li class="list-group-item list-group-item-info">I am a trained volunteer Career Development Coach for the <a href="http://www.shaw-trust.org.uk/" target="_blank">Shaw Trust</a> helping disabled people or those at a disadvantage to find and sustain employment, offering his services once per week.</li>
+<li class="list-group-item list-group-item-info">I live with my wife Laura in the village of <a href="https://goo.gl/maps/XtZrD4kyUww" target="_blank">Chislehurst</a> just South of London.</li>
+</ul>
+    </div>
 </div>
