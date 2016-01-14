@@ -2,27 +2,34 @@ body {
     padding-top: 80px;
 }
 
-.navbar-brand{
-    line-height: 80px;
-    height: 80px;
-}
+/*.navbar-brand{*/
+/*    line-height: 80px;*/
+/*    height: 80px;*/
+/*}*/
 
-.navbar-nav li a {
-}
 
-.navbar-logo {
-    padding-top: 0;
-    font-size: 50px;
-}
+/*.navbar-logo {*/
+/*    padding-top: 0;*/
+/*    font-size: 50px;*/
+/*}*/
 
-.navbar-brand svg {
-    height: 100%;
-    width: auto;
-    fill: #9d9d9d;
-}
+/*.navbar-brand svg {*/
+/*    height: 100%;*/
+/*    width: auto;*/
+/*    fill: #9d9d9d;*/
+/*}*/
 
-.navbar-brand svg:hover {
-    fill: white;
+/*.navbar-brand svg:hover {*/
+/*    fill: white;*/
+/*}*/
+
+.img-with-overlay {
+    position: relative;
+}
+.img-overlay {
+    position: absolute;
+    width:100%;
+    top:0;
 }
 
 .carousel .jumbotron {
@@ -34,6 +41,14 @@ body {
     padding: 80px 0 200px;
     color: white;
     text-shadow: 2px 2px #000000;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+#qanda .panel-heading {
+    cursor: pointer;
 }
 
 .jumbotron-bg {
