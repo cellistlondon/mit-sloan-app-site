@@ -48,7 +48,7 @@ body {
     text-shadow: 2px 2px #000000;
 }
 
-#qanda .panel-heading {
+#q-and-a .panel-heading {
     cursor: pointer;
 }
 
@@ -65,5 +65,5 @@ body {
 }
 
   .affix {
-      top: 100px;
+      top: 80px;
   }
