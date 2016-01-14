@@ -63,3 +63,7 @@ body {
     left: 0;
     
 }
+
+  .affix {
+      top: 100px;
+  }
