@@ -1,5 +1,5 @@
 body {
-    top: 80px;
+    margin-top: 80px;
 
 }
 
@@ -67,9 +67,4 @@ body {
 
   .affix {
       top: 80px;
-  }
-  
-  .nav-link {
-      padding-top: 60px; 
-      margin-top: -40px;
   }
