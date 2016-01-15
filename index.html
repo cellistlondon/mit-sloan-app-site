@@ -1,142 +1,135 @@
 ---
 layout: default
 ---
+<div class="col-sm-2 hidden-xs">
+  <div id="navbar-mitapp">
+    <ul class="nav nav-pill nav-stacked" data-spy="affix">
+      <li role="navigation" class="active"><a href="#"><strong>Home</strong></a></li>
+      <li role="navigation"><a href="#q-and-a"><strong>Questions and Answers</strong></a></li>
+      <li role="navigation"><a href="#why-mit-sloan">- Why MIT Sloan?</a></li>
+      <li role="navigation"><a href="#why-an-mba">- Why an MBA?</a></li>
+      <li role="navigation"><a href="#why-now">- Why now?</a></li>
+      <li role="navigation"><a href="#about-me"><strong>About me</strong></a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-sm-10 col-xs-12">
+  <div class="jumbotron">
+      <div class="img-with-overlay">
+        <img src="{{ " /img/chris-sloan-campus.jpg " | prepend: site.baseurl }}" class="img-responsive"/>
+        <div class="img-overlay text-white">
+          <div class="col-md-10 col-xs-12">
+            <h1>Application to the MIT Sloan School of Management</h1>
+            <h2>Additional insights about Christopher Ellis Thomas</h2>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="q-and-a">
+    <h1 class="text-primary">Questions and Answers</h1>
+    <div class="panel-group" id="qandaAccordion" role="tablist" aria-multiselectable="false">
 
-<div class="home">
-  <div class="row">
-    <nav id="navbar-mitapp" class="col-sm-2">
-      <ul class="nav nav-pill nav-stacked" data-spy="affix">
-        <li role="navigation" class="active"><a href="#"><strong>Home</strong></a></li>
-        <li role="navigation"><a href="#q-and-a"><strong>Questions and Answers</strong></a></li>
-        <li role="navigation"><a href="#why-mit-sloan">- Why MIT Sloan?</a></li>
-        <li role="navigation"><a href="#why-an-mba">- Why an MBA?</a></li>
-        <li role="navigation"><a href="#why-now">- Why now?</a></li>
-        <li role="navigation"><a href="#about-me"><strong>About me</strong></a></li>
-      </ul>
-    </nav>
-    <div class="col-sm-10">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="img-with-overlay">
-            <img src="{{ " /img/chris-sloan-campus.jpg " | prepend: site.baseurl }}" class="img-responsive" />
-            <div class="img-overlay text-white">
-              <div class="container">
-                <h1>Application to the MIT Sloan School of Management</h1>
-                <h2>Additional insights about Christopher Ellis Thomas</h2>
-              </div>
-            </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse" data-target="#why-mit-sloan-a" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="why-mit-sloan-a" role="tab" id="why-mit-sloan">
+          <h4 class="panel-title">
+        <a href="#why-mit-sloan-a" role="button">Why MIT Sloan?
+              </a>
+              </h4>
+        </div>
+        <div id="why-mit-sloan-a" class="panel-collapse" role="tabpanel" aria-labelledby="why-mit-sloan">
+          <div class="panel-body">
+            <p>
+              Of all of the programmes which I reviewed (and applied for), Sloan’s was by far my favourite. I believe it offers me three things that no other programme does:
+            </p>
+            <ul>
+              <li>
+                <strong>An engineering cohort but not an engineering programme.</strong> I am not seeking an MBA to make a return to the engineering sector. However I relish the fact that I would have an immediate affinity with much of the cohort because
+                of my undergraduate degree despite no doubt having had a completely different experience since graduation
+              </li>
+              <li>
+                <strong>A world class business school inside a world class engineering university.</strong> With perhaps the exception of two bay-area institutions no other school can come close to making such a claim. While this is related to the first
+                point the implication is different; mixing outside of the Sloan cohort on and off campus with a group of people who, by their nature, are innovative and problem-solvers offers something invaluable. MBAs have in the past been accused of
+                group-think and surrounding oneself with diversity is the best way to defeat that.
+              </li>
+              <li>
+                <strong>A focus on entrepreneurship and especially FinTech.</strong> While I was on campus I heard about the FinTech Ventures course, this combined with the MIT FinTech Club, the MIT FinTech Conference and the facilities of the Martin
+                Trust center position Sloan as by far the strongest graduate institution in this area.
+              </li>
+            </ul>
+
           </div>
         </div>
       </div>
-      <div id="q-and-a" class="container">
-        <h1 class="text-primary">Questions and Answers</h1>
-        <div class="panel-group" id="qandaAccordion" role="tablist" aria-multiselectable="false">
-
-          <div class="panel panel-primary">
-            <div class="panel-heading" data-toggle="collapse" data-target="#answerOne" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerOne" role="tab" id="why-mit-sloan">
-              <h4 class="panel-title">
-        <a href="#answerOne" role="button">Why MIT Sloan?
-              </a>
-              </h4>
-            </div>
-            <div id="answerOne" class="panel-collapse" role="tabpanel" aria-labelledby="why-mit-sloan">
-              <div class="panel-body">
-                <p>
-                  Of all of the programmes which I reviewed (and applied for), Sloan’s was by far my favourite. I believe it offers me three things that no other programme does:
-                </p>
-                <ul>
-                  <li>
-                    <strong>An engineering cohort but not an engineering programme.</strong> I am not seeking an MBA to make a return to the engineering sector. However I relish the fact that I would have an immediate affinity with much of the cohort
-                    because of my undergraduate degree despite no doubt having had a completely different experience since graduation
-                  </li>
-                  <li>
-                    <strong>A world class business school inside a world class engineering university.</strong> With perhaps the exception of two bay-area institutions no other school can come close to making such a claim. While this is related to the
-                    first point the implication is different; mixing outside of the Sloan cohort on and off campus with a group of people who, by their nature, are innovative and problem-solvers offers something invaluable. MBAs have in the past been
-                    accused of group-think and surrounding oneself with diversity is the best way to defeat that.
-                  </li>
-                  <li>
-                    <strong>A focus on entrepreneurship and especially FinTech.</strong> While I was on campus I heard about the FinTech Ventures course, this combined with the MIT FinTech Club, the MIT FinTech Conference and the facilities of the Martin
-                    Trust center position Sloan as by far the strongest graduate institution in this area.
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerTwo" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerTwo" role="tab" id="why-an-mba">
-              <h4 class="panel-title">
-        <a href="#answerTwo" role="button">
+      <div class="panel panel-primary">
+        <div class="panel-heading collapsed" data-toggle="collapse" data-target="#why-an-mba-a" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="why-an-mba-a" role="tab" id="why-an-mba">
+          <h4 class="panel-title">
+        <a href="#why-an-mba-a" role="button">
           Why an MBA?
         </a>
       </h4>
-            </div>
-            <div id="answerTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="why-an-mba">
-              <div class="panel-body">
-                <p>
-                  I have spent the first 10 years of my career in a set of industries within a sector undergoing significant change; financial services and the investment management industries in which I advanced my career have been forever transformed by the events of
-                  2008. Wealth management, my most recent domain, is a rapidly maturing industry (in the Industry Life Cycle sense) undergoing a large amount of consolidation as it begins to face disruption from financial technology (FinTech) start-ups
-                  and a few market leaders who are increasingly able to leverage extreme economies of scale. As the historically high barriers to entry are gradually picked apart, the incumbents, many still dealing with expensive legacy issues, are rushing
-                  to protect their existing business in ways reminiscent of high-street retailers facing Amazon et al in the late ‘90s and early ‘00s.
-                </p>
-                <p>
-                  With this industry backdrop, building a fulfilling and high-achieving career in asset or wealth management requires not only a different set of skills but also potentially a different starting point. Growing into a leader at Walmart in the 21st century
-                  would have been nothing compared to the same experience at Amazon through the same period, and although the stakes are high in the start-up arena the experience to be gained in a failed start-up would be exponentially more valuable than
-                  the same experience at a victim of the new economy such as Radio Shack or Borders would have been.
-                </p>
-                <p>
-                  With this in mind, I plan to take on an MBA to further enable me to succeed at one of two routes to a fulfilling career in investment management in the new economy. An MBA would be a great platform to begin or join an early stage FinTech venture and be
-                  a part of the Schumpeterian disruption which continues to shape the sector.
-                </p>
-                <p>
-                  Alternatively, the incumbent businesses who have the platform, people and scale to prosper in this new environment are likely to continue to become more competitive places to climb and succeed; the skills, network and brand that an MBA offers will be
-                  important tenets of my proposition in order to excel on the leadership-track at one of those firms
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading collapsed" data-toggle="collapse" data-target="#answerThree" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="answerThree" role="tab" id="why-now">
-              <h4 class="panel-title">
-        <a href="#answerThree" role="button">Why now? </a>
-      </h4>
-            </div>
-            <div id="answerThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="why-now">
-              <div class="panel-body">
-                <p>There are two aspects to this answer, why didn’t I apply for an MBA earlier in my career and, given that I didn’t why don’t I now apply for an EMBA or Sloan Fellows program?
-                </p>
-                <p>On the former, the ‘prime’ period of my career for application coincided with the credit crunch great recession financial crisis of 2008 at which point I had 4 years of experience. While I managed to stay employed throughout that period
-                  and indeed continued to develop my career there were no opportunities to take on a full-time MBA. In addition I completed the CFA program over a similar period.
-                </p>
-                <p>I realise that I am on the cusp between the experience of a typical full time MBA candidate and an EMBA or Sloan Fellow. I thought long and hard about this and my decision came down to the following:
-                </p>
-                <ul>
-                  <li>I certainly wanted to fully immerse myself in a program and so I ruled out part-time study
-                  </li>
-                  <li>While the Sloan Fellow program is appealing I felt that the level of accomplishment required to be a viable candidate would necessitate being one or two steps further in my career
-                  </li>
-                </ul>
-              </div>
-            </div>
+        </div>
+        <div id="why-an-mba-a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="why-an-mba">
+          <div class="panel-body">
+            <p>
+              I have spent the first 10 years of my career in a set of industries within a sector undergoing significant change; financial services and the investment management industries in which I advanced my career have been forever transformed by the events of
+              2008. Wealth management, my most recent domain, is a rapidly maturing industry (in the Industry Life Cycle sense) undergoing a large amount of consolidation as it begins to face disruption from financial technology (FinTech) start-ups and
+              a few market leaders who are increasingly able to leverage extreme economies of scale. As the historically high barriers to entry are gradually picked apart, the incumbents, many still dealing with expensive legacy issues, are rushing to
+              protect their existing business in ways reminiscent of high-street retailers facing Amazon et al in the late ‘90s and early ‘00s.
+            </p>
+            <p>
+              With this industry backdrop, building a fulfilling and high-achieving career in asset or wealth management requires not only a different set of skills but also potentially a different starting point. Growing into a leader at Walmart in the 21st century
+              would have been nothing compared to the same experience at Amazon through the same period, and although the stakes are high in the start-up arena the experience to be gained in a failed start-up would be exponentially more valuable than
+              the same experience at a victim of the new economy such as Radio Shack or Borders would have been.
+            </p>
+            <p>
+              With this in mind, I plan to take on an MBA to further enable me to succeed at one of two routes to a fulfilling career in investment management in the new economy. An MBA would be a great platform to begin or join an early stage FinTech venture and be
+              a part of the Schumpeterian disruption which continues to shape the sector.
+            </p>
+            <p>
+              Alternatively, the incumbent businesses who have the platform, people and scale to prosper in this new environment are likely to continue to become more competitive places to climb and succeed; the skills, network and brand that an MBA offers will be
+              important tenets of my proposition in order to excel on the leadership-track at one of those firms
+            </p>
           </div>
         </div>
       </div>
-      <div id="about-me" class="container">
-        <h1 class="text-primary">About me</h1>
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-info">I grew up in a working class family in suburban <a href="https://goo.gl/maps/ewafzxojzz62" target="_blank">South East London</a> alongside two younger brothers.</li>
-          <li class="list-group-item list-group-item-info">I was the first from my extended family and one of only a handful from my <a href="http://www.bromley.gov.uk/directory_record/59837/kemnal_technology_college" target="_blank">secondary school</a> class to attend university.</li>
-          <li class="list-group-item list-group-item-info">I studied Mechanical Engineering and was awarded an upper second class degree by the <a href="http://www.birmingham.ac.uk/index.aspx" target="_blank">University of Birmingham</a> a <a href="https://en.wikipedia.org/wiki/Red_brick_university"
-            target="_blank">redbrick institution</a> and founder member of the prestigious <a href="https://en.wikipedia.org/wiki/Russell_Group" target="_blank">Russell Group</a> .</li>
-          <li class="list-group-item list-group-item-info">I entered financial services immediately following graduation and have held a diverse set of positions across Asset and Wealth management including promotions across both analytical and sales roles.</li>
-          <li class="list-group-item list-group-item-info">In 2015 I set up my company to offer solutions to investment managers, <a href="http://cellist.co" target="_blank">Cellist Consulting</a>.</li>
-          <li class="list-group-item list-group-item-info">I hold a CFA charter having passed all three exams at the first attempt.</li>
-          <li class="list-group-item list-group-item-info">I am a trained volunteer Career Development Coach for the <a href="http://www.shaw-trust.org.uk/" target="_blank">Shaw Trust</a> helping disabled people or those at a disadvantage to find and sustain employment, offering my services once per
-            week.
-          </li>
-          <li class="list-group-item list-group-item-info">I live with my wife Laura in the village of <a href="https://goo.gl/maps/XtZrD4kyUww" target="_blank">Chislehurst</a> just South of London.</li>
-        </ul>
+      <div class="panel panel-primary">
+        <div class="panel-heading collapsed" data-toggle="collapse" data-target="#why-now-a" data-parent="#qandaAccordion" aria-expanded="false" aria-controls="why-now-a" role="tab" id="why-now">
+          <h4 class="panel-title">
+        <a href="#why-now-a" role="button">Why now? </a>
+      </h4>
+        </div>
+        <div id="why-now-a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="why-now">
+          <div class="panel-body">
+            <p>There are two aspects to this answer, why didn’t I apply for an MBA earlier in my career and, given that I didn’t why don’t I now apply for an EMBA or Sloan Fellows program?
+            </p>
+            <p>On the former, the ‘prime’ period of my career for application coincided with the credit crunch great recession financial crisis of 2008 at which point I had 4 years of experience. While I managed to stay employed throughout that period and
+              indeed continued to develop my career there were no opportunities to take on a full-time MBA. In addition I completed the CFA program over a similar period.
+            </p>
+            <p>I realise that I am on the cusp between the experience of a typical full time MBA candidate and an EMBA or Sloan Fellow. I thought long and hard about this and my decision came down to the following:
+            </p>
+            <ul>
+              <li>I certainly wanted to fully immerse myself in a program and so I ruled out part-time study
+              </li>
+              <li>While the Sloan Fellow program is appealing I felt that the level of accomplishment required to be a viable candidate would necessitate being one or two steps further in my career
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div id="about-me">
+    <h1 class="text-primary">About me</h1>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">I grew up in a working class family in suburban <a href="https://goo.gl/maps/ewafzxojzz62" target="_blank">South East London</a> alongside two younger brothers.</li>
+      <li class="list-group-item list-group-item-info">I was the first from my extended family and one of only a handful from my <a href="http://www.bromley.gov.uk/directory_record/59837/kemnal_technology_college" target="_blank">secondary school</a> class to attend university.</li>
+      <li class="list-group-item list-group-item-info">I studied Mechanical Engineering and was awarded an upper second class degree by the <a href="http://www.birmingham.ac.uk/index.aspx" target="_blank">University of Birmingham</a> a <a href="https://en.wikipedia.org/wiki/Red_brick_university" target="_blank">redbrick institution</a>        and founder member of the prestigious <a href="https://en.wikipedia.org/wiki/Russell_Group" target="_blank">Russell Group</a> .</li>
+      <li class="list-group-item list-group-item-info">I entered financial services immediately following graduation and have held a diverse set of positions across Asset and Wealth management including promotions across both analytical and sales roles.</li>
+      <li class="list-group-item list-group-item-info">In 2015 I set up my company to offer solutions to investment managers, <a href="http://cellist.co" target="_blank">Cellist Consulting</a>.</li>
+      <li class="list-group-item list-group-item-info">I hold a CFA charter having passed all three exams at the first attempt.</li>
+      <li class="list-group-item list-group-item-info">I am a trained volunteer Career Development Coach for the <a href="http://www.shaw-trust.org.uk/" target="_blank">Shaw Trust</a> helping disabled people or those at a disadvantage to find and sustain employment, offering my services once per week.
+      </li>
+      <li class="list-group-item list-group-item-info">I live with my wife Laura in the village of <a href="https://goo.gl/maps/XtZrD4kyUww" target="_blank">Chislehurst</a> just South of London.</li>
+    </ul>
   </div>
 </div>

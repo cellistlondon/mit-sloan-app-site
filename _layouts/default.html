@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body data-spy="scroll" data-target="#navbar-mitapp">
+<body data-spy="scroll" data-target="#navbar-mitapp">
 
-    {% include header.html %}
+      {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+
+  <div class="page-content">
+    <div class="container-fluid">
+      <div class="row">
         {{ content }}
       </div>
     </div>
-
-    {% include footer.html %}
-
-  </body>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      {% include footer.html %}
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
 
 </html>
