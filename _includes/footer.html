@@ -1,28 +1,43 @@
-<div class="col-xs-12">
-  <footer class="site-footer">
-    <ul>
-      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      {% if site.github_username %}
-      <li>
-        <a href="https://github.com/{{ site.github_username }}">
-          <i class="fa fa-github-square">
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <ul class="nav nav-pills nav-stacked center-text">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% if site.linkedin_username %}
+          <li>
+            <a href="https://uk.linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fa fa-linkedin-square">
               </i>
 
-          <span class="username">{{ site.github_username }}</span>
-        </a>
-      </li>
-      {% endif %} {% if site.twitter_username %}
-      <li>
-        <a href="https://twitter.com/{{ site.twitter_username }}">
-          <i class="fa fa-twitter-square">
+              <span class="username">{{ site.linkedin_username }}</span>
+            </a>
+          </li>
+          {% endif %} {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github-square">
               </i>
 
-          <span class="username">{{ site.twitter_username }}</span>
-        </a>
-      </li>
-      {% endif %}
-    </ul>
+              <span class="username">{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %} {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-twitter-square">
+              </i>
 
-    <!--<script src="{{ "/js/cellist.js" | prepend: site.baseurl }}"></script>-->
-  </footer>
-</div>
+              <span class="username">{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+
+        <!--<script src="{{ "/js/cellist.js" | prepend: site.baseurl }}"></script>-->
+
+      </div>
+    </div>
+  </div>
+</footer>

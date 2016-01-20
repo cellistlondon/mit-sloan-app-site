@@ -6,6 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   MIT Sloan School of Management
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mitsloan.cellist.co" # the base hostname & protocol for your site
+linkedin_username: christophermthomas
 twitter_username: cellist_co
 github_username:  cellistlondon
 

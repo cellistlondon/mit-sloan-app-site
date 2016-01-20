@@ -1,41 +1,43 @@
 ---
 layout: default
 ---
-<div class="col-sm-2 hidden-xs">
-  <div id="navbar-mitapp">
-    <ul class="nav nav-pill nav-stacked" data-spy="affix">
-      <li role="navigation" class="active"><a href="#hero-jumbo"><strong>Home</strong></a></li>
-      <li role="navigation"><a href="#q-and-a"><strong>Questions and Answers</strong></a></li>
-      <li role="navigation"><a href="#why-mit-sloan">- Why MIT Sloan?</a></li>
-      <li role="navigation"><a href="#why-an-mba">- Why an MBA?</a></li>
-      <li role="navigation"><a href="#why-now">- Why now?</a></li>
-      <li role="navigation"><a href="#about-me"><strong>More about me</strong></a></li>
-    </ul>
-  </div>
-</div>
-<div class="col-sm-10 col-xs-12">
-  <div class="row">
-    <div class="col-xs-12">
-      <div id="hero-jumbo" class="jumbotron">
-        <div class="img-with-overlay">
-          <img src="{{ " /img/chris-sloan-campus.jpg " | prepend: site.baseurl }}" class="img-responsive">
-          <div class="img-overlay text-white">
-            <div class="row">
-              <div class="col-md-offset-1 col-md-9 col-xs-12">
-                <h1>Application to the MIT Sloan School of Management</h1>
-                <p>Master of Business Administration</p>
-                <h3>Christopher Ellis Thomas: Additional Insights</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-sm-2 hidden-xs">-->
+<!--      <div id="navbar-mitapp">-->
+<!--        <ul class="nav nav-pill nav-stacked" data-spy="affix">-->
+<!--          <li role="navigation" class="active"><a href="#hero-jumbo"><strong>Home</strong></a></li>-->
+<!--          <li role="navigation"><a href="#q-and-a"><strong>Questions and Answers</strong></a></li>-->
+<!--          <li role="navigation"><a href="#why-mit-sloan">- Why MIT Sloan?</a></li>-->
+<!--          <li role="navigation"><a href="#why-an-mba">- Why an MBA?</a></li>-->
+<!--          <li role="navigation"><a href="#why-now">- Why now?</a></li>-->
+<!--          <li role="navigation"><a href="#about-me"><strong>More about me</strong></a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div><span>Application to the MIT Sloan School of Management</span></div>
+      <div><span>Master of Business Administration</span></div>
+      <div class="intro-lead-in">Christopher Ellis Thomas</div>
+      <div class="intro-heading">Additional Insights</div>
+      <a class="page-scroll btn btn-primary btn-xl" href="#q-and-a">Questions Answered</a>
+      <a class="page-scroll btn btn-primary btn-xl" href="#about-me">More About Chris</a>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <div id="q-and-a">
-        <h1 class="text-primary">Questions and Answers</h1>
+</header>
+
+<section id="q-and-a">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="section-heading text-center">Questions and Answers</h1>
         <div class="panel-group" id="qandaAccordion" role="tablist" aria-multiselectable="false">
           <div class="panel panel-primary">
             <div class="panel-heading" data-toggle="collapse" data-target="#why-mit-sloan-a" data-parent="#qandaAccordion" aria-expanded="true" aria-controls="why-mit-sloan-a" role="tab" id="why-mit-sloan">
@@ -44,7 +46,7 @@ layout: default
             <div id="why-mit-sloan-a" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="why-mit-sloan">
               <div class="panel-body">
                 <p>
-                  Of all of the programmes which I reviewed (and applied for), Sloan’s was by far my favourite. I believe it offers me three things that no other programme does:
+                  Of all of the programmes which I reviewed (and applied for), I believe Sloan’s to be by far the best fit. I believe it offers me three things that no other programme does:
                 </p>
                 <ul>
                   <li>
@@ -52,9 +54,9 @@ layout: default
                     because of my undergraduate degree despite no doubt having had a completely different experience since graduation
                   </li>
                   <li>
-                    <strong>A world class business school inside a world class engineering university.</strong> With perhaps one or two exceptions no other school can come close to making such a claim. While this is related to the
-                    first point the implication is different; mixing outside of the Sloan cohort on and off campus with a group of people who, by their nature, are innovative and problem-solvers offers something invaluable. MBAs have in the past been
-                    accused of group-think and surrounding oneself with diversity is the best way to defeat that.
+                    <strong>A world class business school inside a world class engineering university.</strong> With perhaps one or two exceptions no other school can come close to making such a claim. While this is related to the first point the implication
+                    is different; mixing outside of the Sloan cohort on and off campus with a group of people who, by their nature, are innovative and problem-solvers offers something invaluable. MBAs have in the past been accused of group-think and surrounding
+                    oneself with diversity is the best way to defeat that.
                   </li>
                   <li>
                     <strong>A focus on entrepreneurship and especially FinTech.</strong> While I was on campus I heard about the FinTech Ventures course, this combined with the MIT FinTech Club, the MIT FinTech Conference and the facilities of the Martin
@@ -106,8 +108,8 @@ layout: default
               <div class="panel-body">
                 <p>There are two aspects to this answer, why didn’t I apply for an MBA earlier in my career and, given that I didn’t, why don’t I now apply for an EMBA or Sloan Fellows program?
                 </p>
-                <p>On the former, the ‘prime’ period of my career for application coincided with the <del>credit crunch</del> <del>great recession</del> financial crisis of 2008 at which point I had 4 years of experience. While I managed to stay employed throughout that period
-                  and indeed continued to develop my career there were no opportunities to take on a full-time MBA. In addition I completed the CFA program over a similar period.
+                <p>On the former, the ‘prime’ period of my career for application coincided with the <del>credit crunch</del> <del>great recession</del> financial crisis of 2008 at which point I had 4 years of experience. While I managed to stay employed
+                  throughout that period and indeed continued to develop my career there were no opportunities to take on a full-time MBA. In addition I completed the CFA program over a similar period.
                 </p>
                 <p>I realise that I am on the cusp between the experience of a typical full time MBA candidate and an EMBA or Sloan Fellow. I thought long and hard about this and my decision came down to the following:
                 </p>
@@ -124,24 +126,71 @@ layout: default
       </div>
     </div>
   </div>
+</section>
+<section id="about-me">
   <div class="row">
     <div class="col-xs-12">
-      <div id="about-me">
-        <h1 class="text-primary">More about me</h1>
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-info">I grew up in a working class family in suburban <a href="https://goo.gl/maps/ewafzxojzz62" target="_blank">South East London</a> alongside two younger brothers.</li>
-          <li class="list-group-item list-group-item-info">I was the first from my extended family and one of only a handful from my <a href="http://www.bromley.gov.uk/directory_record/59837/kemnal_technology_college" target="_blank">secondary school</a> class to attend university.</li>
-          <li class="list-group-item list-group-item-info">I studied Mechanical Engineering and was awarded an upper second class degree by the <a href="http://www.birmingham.ac.uk/index.aspx" target="_blank">University of Birmingham</a> a <a href="https://en.wikipedia.org/wiki/Red_brick_university"
-            target="_blank">redbrick institution</a> and a founder member of the prestigious <a href="https://en.wikipedia.org/wiki/Russell_Group" target="_blank">Russell Group</a> .</li>
-          <li class="list-group-item list-group-item-info">I entered financial services immediately following graduation and have held a diverse set of positions across Asset and Wealth management including promotions across both analytical and sales roles.</li>
-          <li class="list-group-item list-group-item-info">In 2015 I set up my own company to offer solutions to investment managers, <a href="http://cellist.co" target="_blank">Cellist Consulting</a>.</li>
-          <li class="list-group-item list-group-item-info">I hold a CFA charter having passed all three exams at the first attempt.</li>
-          <li class="list-group-item list-group-item-info">I am a trained volunteer Career Development Coach for the <a href="http://www.shaw-trust.org.uk/" target="_blank">Shaw Trust</a> helping disabled people or those at a disadvantage to find and sustain employment, offering my services once per
-            week.
-          </li>
-          <li class="list-group-item list-group-item-info">I live with my wife Laura in the village of <a href="https://goo.gl/maps/XtZrD4kyUww" target="_blank">Chislehurst</a> just South of London.</li>
-        </ul>
-      </div>
+      <h1 class="section-heading text-center">More about me</h1>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-image">
+            <!--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">-->
+            <h2><span class="glyphicon glyphicon-user"></span></h2>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Growing Up</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">I grew up in a working class family in suburban <a href="https://goo.gl/maps/ewafzxojzz62" target="_blank">South East London</a> alongside two younger brothers.</p>
+              </div>
+          </div>
+        </li>
+        <li  class="timeline-inverted">
+          <div class="timeline-image">
+            <h2><span class="glyphicon glyphicon-education"></span></h2>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Education</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">I was the first from my extended family and one of only a handful from my <a href="http://www.bromley.gov.uk/directory_record/59837/kemnal_technology_college" target="_blank">secondary school</a> class to attend university.</p>
+              <p class="text-muted">I studied Mechanical Engineering and was awarded an upper second class degree by the <a href="http://www.birmingham.ac.uk/index.aspx" target="_blank">University of Birmingham</a> a <a href="https://en.wikipedia.org/wiki/Red_brick_university" target="_blank">redbrick institution</a>          and a founder member of the prestigious <a href="https://en.wikipedia.org/wiki/Russell_Group" target="_blank">Russell Group</a> .</p>
+              <p class="text-muted">I hold a CFA charter having passed all three exams at the first attempt.</p>
+        
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <h2><span class="glyphicon glyphicon-briefcase"></span></h2>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Career</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">I entered financial services immediately following graduation and have held a diverse set of positions across Asset and Wealth management including promotions across both analytical and sales roles.</p>
+              <p class="text-muted">In 2015 I set up my own company to offer solutions to investment managers, <a href="http://cellist.co" target="_blank">Cellist Consulting</a>.</p>
+              </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <h2><span class="glyphicon glyphicon-time"></span></h2>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Outside Interests</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">I am a trained volunteer Career Development Coach for the <a href="http://www.shaw-trust.org.uk/" target="_blank">Shaw Trust</a> helping disabled people or those at a disadvantage to find and sustain employment, offering my services once per week.</p>
+              <p class="text-muted">I live with my wife Laura in the village of <a href="https://goo.gl/maps/XtZrD4kyUww" target="_blank">Chislehurst</a> just South of London.</p>
+              </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</section>

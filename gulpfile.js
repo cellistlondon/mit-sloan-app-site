@@ -33,14 +33,15 @@ var paths = {
 };
 
 gulp.task('css', function() {
-    return gulp.src(paths.bootstrap_mincss.concat(paths.fa_mincss).concat(paths.app_less))
+    return gulp.src(paths.app_less)
         .pipe(concat('cellist.css'))
         .pipe(gulp.dest(paths.dist_css));
 });
 
+
 gulp.task('js', function() {
-    return gulp.src(paths.jquery_minjs, paths.bootstrap_minjs)
-        .pipe(gulp.dest(paths.dist_js));
+    // return gulp.src(paths.jquery_minjs, paths.bootstrap_minjs)
+    //     .pipe(gulp.dest(paths.dist_js));
 });
 
 gulp.task('fonts', function() {
